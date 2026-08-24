@@ -19,9 +19,7 @@ Ask before navigating the user's browser to an unfamiliar or low-trust site they
 
 ## Command path
 
-Run `cdp <command>` — the package's postinstall step links the CLI into `~/.pi/agent/bin`.
-
-If that symlink is missing (e.g. scripts were skipped), fall back to `node <path-to-this-skill>/scripts/cdp.mjs`.
+The CLI lives next to this skill at `scripts/cdp.mjs`. Resolve it relative to this `SKILL.md` file, or use the installed package path if your host exposes one.
 
 ## Prerequisites
 
