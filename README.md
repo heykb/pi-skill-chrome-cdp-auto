@@ -25,7 +25,7 @@ One behavior chain for users: **connect if reachable, launch if not**.
 
 Cold start with zero CDP endpoints — the CLI launches a dedicated Chrome instance in ~2s, and the agent invokes everything by bare filename:
 
-![Auto-launch in action](assets/auto-launch.png)
+![Auto-launch in action](https://raw.githubusercontent.com/heykb/pi-skill-chrome-cdp-auto/main/assets/auto-launch.png)
 
 ## Install
 
