@@ -19,6 +19,10 @@
 ## 安装
 
 ```bash
+# npm（推荐）
+pi install npm:pi-skill-chrome-cdp-auto
+
+# 或从 GitHub 仓库
 pi install git+https://github.com/heykb/pi-skill-chrome-cdp-auto
 ```
 
