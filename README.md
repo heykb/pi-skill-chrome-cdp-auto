@@ -21,6 +21,12 @@ This fork builds launching into the CLI itself:
 
 One behavior chain for users: **connect if reachable, launch if not**.
 
+## Demo
+
+Cold start with zero CDP endpoints — the CLI launches a dedicated Chrome instance in ~2s, and the agent invokes everything by bare filename:
+
+![Auto-launch in action](assets/auto-launch.png)
+
 ## Install
 
 ```bash
