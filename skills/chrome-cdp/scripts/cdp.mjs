@@ -177,7 +177,7 @@ async function getWsUrl() {
   // Opt out with CDP_NO_AUTOLAUNCH=1.
   if (process.env.CDP_NO_AUTOLAUNCH !== '1') {
     try {
-      process.stderr.write('No CDP endpoint found — auto-launching dedicated Chrome debugging instance...\n');
+      process.stderr.write('No CDP endpoint found — auto-launching dedicated Chrome debugging instance (one-time, ~2-15s)...\n');
       return await autoLaunchDebugger();
     } catch (err) {
       errors.push(`auto-launch: ${err.message}`);
@@ -1037,7 +1037,7 @@ async function main() {
     const pages = await getPages(cdp);
     cdp.close();
     writeFileSync(PAGES_CACHE, JSON.stringify(pages), { mode: 0o600 });
-    console.log(formatPageList(pages));
+    console.log(formatPageList(pages) || '(no regular pages open — only chrome:// internal tabs. Use `cdp.mjs open <url>` to start one.)');
     setTimeout(() => process.exit(0), 100);
     return;
   }
