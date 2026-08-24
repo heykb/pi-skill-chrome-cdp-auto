@@ -1,0 +1,26 @@
+{
+  "name": "pi-skill-chrome-cdp-auto",
+  "version": "0.1.0",
+  "description": "Pi skill package for chrome-cdp with auto-launch: zero-config browser debugging that starts a dedicated Chrome instance when no CDP endpoint is found.",
+  "type": "module",
+  "keywords": [
+    "pi-package",
+    "pi",
+    "pi-skill",
+    "skill",
+    "chrome-cdp",
+    "cdp",
+    "devtools"
+  ],
+  "license": "MIT",
+  "files": [
+    "skills",
+    "README.md",
+    "LICENSE"
+  ],
+  "pi": {
+    "skills": [
+      "./skills"
+    ]
+  }
+}
