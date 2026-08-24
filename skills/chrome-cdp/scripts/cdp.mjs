@@ -177,7 +177,6 @@ async function getWsUrl() {
   // Opt out with CDP_NO_AUTOLAUNCH=1.
   if (process.env.CDP_NO_AUTOLAUNCH !== '1') {
     try {
-      process.stderr.write('No CDP endpoint found — auto-launching dedicated Chrome debugging instance (one-time, ~2-15s)...\n');
       return await autoLaunchDebugger();
     } catch (err) {
       errors.push(`auto-launch: ${err.message}`);
