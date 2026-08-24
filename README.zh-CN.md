@@ -21,6 +21,12 @@
 
 对使用者只有一条行为链：**连得上就连，连不上自己拉**。
 
+## 演示
+
+零 CDP 端点冷启动——CLI 约 2 秒拉起专用 Chrome 实例，agent 全程裸文件名调用：
+
+![Auto-launch 实景](https://raw.githubusercontent.com/heykb/pi-skill-chrome-cdp-auto/main/assets/auto-launch.png)
+
 ## 安装
 
 ```bash
@@ -58,6 +64,6 @@ pi install git+https://github.com/heykb/pi-skill-chrome-cdp-auto
 - ✅ macOS + Google Chrome 151 实测
 - ⚠️ Linux / Windows 的浏览器路径分支已实现但未实测
 
-## 归属
+## 许可
 
-基于 [pasky/chrome-cdp-skill](https://github.com/pasky/chrome-cdp-skill) → [@howaboua/pi-skill-chrome-cdp](https://github.com/IgorWarzocha/howaboua-pi-stuff) 的 MIT fork，新增 auto-launch 与端口文件校验。见 [LICENSE](LICENSE)。
+[MIT](LICENSE)
