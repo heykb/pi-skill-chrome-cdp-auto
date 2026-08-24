@@ -19,7 +19,7 @@
 ## 安装
 
 ```bash
-pi install git+https://github.com/<you>/pi-skill-chrome-cdp-auto
+pi install git+https://github.com/heykb/pi-skill-chrome-cdp-auto
 ```
 
 或手动 clone 后把 `skills/` 路径加入 `~/.pi/agent/settings.json` 的 `skills` 数组。
