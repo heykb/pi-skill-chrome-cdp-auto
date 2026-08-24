@@ -19,7 +19,9 @@ Ask before navigating the user's browser to an unfamiliar or low-trust site they
 
 ## Command path
 
-The CLI lives next to this skill at `scripts/cdp.mjs`. Resolve it relative to this `SKILL.md` file, or use the installed package path if your host exposes one.
+If a `cdp` command exists on PATH, prefer it: just run `cdp <command>`.
+
+Otherwise, the CLI lives next to this skill at `scripts/cdp.mjs`. Resolve it relative to this `SKILL.md` file, or use the installed package path if your host exposes one.
 
 ## Prerequisites
 
