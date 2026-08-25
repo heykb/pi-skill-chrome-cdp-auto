@@ -1036,7 +1036,7 @@ async function main() {
     const pages = await getPages(cdp);
     cdp.close();
     writeFileSync(PAGES_CACHE, JSON.stringify(pages), { mode: 0o600 });
-    console.log(formatPageList(pages) || '(no regular pages open — only chrome:// internal tabs. Use `cdp.mjs open <url>` to start one.)');
+    console.log(formatPageList(pages) || '(connected — list is empty: no regular pages are open right now.)');
     setTimeout(() => process.exit(0), 100);
     return;
   }
